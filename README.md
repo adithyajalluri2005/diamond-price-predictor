@@ -60,12 +60,14 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
+---
+
+## 🎯 Usage
 
 
-##🎯 Usage
-###Train models or directly use existing ones from artifacts/.
+### Train models or directly use existing ones from artifacts/.
 
-###Run the web app:
+### Run the web app:
 
 python application.py
 Open your browser at http://127.0.0.1:5000/.
@@ -74,10 +76,14 @@ Input diamond attributes—carat, cut, color, clarity, depth, table, x, y, z.
 
 Click Predict to view the estimated price.
 
-##🧪 Model Training & Inference
-###Data: Uses Kaggle's diamonds dataset with ~54,000 entries and ten core features.
+---
 
-###Preprocessing:
+## 🧪 Model Training & Inference
+
+
+### Data: Uses Kaggle's diamonds dataset with ~54,000 entries and ten core features.
+
+### Preprocessing:
 
 Remove outliers (e.g., extreme depth or dimension values).
 
@@ -85,7 +91,7 @@ Encode categorical features (cut, color, clarity).
 
 Scale numeric columns.
 
-###Modeling:
+### Modeling:
 
 Compare regressors (Linear, Ridge, Lasso, DecisionTree, RandomForest, KNN, XGB, etc.).
 
@@ -93,4 +99,4 @@ Evaluate via R², RMSE, MAE.
 
 XGBoost consistently delivers top performance (~98–99% R²).
 
-###Deployment: Serve the best model using Flask for real-time predictions.
+### Deployment: Serve the best model using Flask for real-time predictions.
